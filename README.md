@@ -2,7 +2,9 @@
 
 ## Instalação
 
-Para instalar o aaPanel, siga os passos abaixo:
+Para instalar o aaPanel no Ubuntu 22.04, siga os passos abaixo:
+
+> **Nota:** Se seu SO for CentOS, apenas apague o Dockerfile.
 
 1. Clone o repositório:
 ```bash
