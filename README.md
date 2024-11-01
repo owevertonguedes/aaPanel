@@ -1,4 +1,4 @@
-# aaPanel - Painel de Controle
+# aaPanel on Docker with Ubuntu 22.04
 
 ## Instalação
 
