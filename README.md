@@ -36,11 +36,21 @@ Para instalar o aaPanel no Ubuntu 22.04, siga os passos abaixo:
 
 ## Acessando o Painel
 
-Para obter as informações de acesso do painel, dentro do shell digite:
+Ainda no shell para obter as informações de acesso do painel use:
 ```bash
 bt 14
 ```
 
-Observações
+Para alterar a porta use:
+```bash
+bt 8
+```
+
+Para ver todos os comandos use:
+```bash
+bt
+```
+
+Observações:
 * Certifique-se de que o Docker e o Docker Compose estejam instalados e funcionando corretamente no seu sistema.
-Após clonar o repositório, não se esqueça de tornar o script install_aapanel.sh executável com o comando chmod +x install_aapanel.sh.
+* Após clonar o repositório, não se esqueça de tornar o script install_aapanel.sh executável com o comando chmod +x install_aapanel.sh.

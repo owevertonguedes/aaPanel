@@ -16,3 +16,4 @@ services:
             - ./mysql_data:/www/server/data
             - ./vhost:/www/server/panel/vhost
             - ./install_aapanel.sh:/install_aapanel.sh
+        command: ["/bin/bash", "-c", "chmod +x /install_aapanel.sh && /install_aapanel.sh && tail -f /dev/null"]
