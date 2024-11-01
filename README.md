@@ -1,6 +1,4 @@
-# aaPanel on Docker with Ubuntu 22.04
-
-## Instalação
+# Instalação do aaPanel no Docker com Ubuntu 22.04
 
 Para instalar o aaPanel no Ubuntu 22.04, siga os passos abaixo:
 
