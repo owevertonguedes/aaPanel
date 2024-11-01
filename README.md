@@ -4,33 +4,43 @@
 
 Para instalar o aaPanel no Ubuntu 22.04, siga os passos abaixo:
 
-> **Nota:** Se seu SO for CentOS, apenas apague o Dockerfile.
-
 1. Clone o repositório:
-```bash
-git clone https://github.com/owevertonguedes/aaPanel
-```
+    ```bash
+    git clone https://github.com/owevertonguedes/aaPanel
+    ```
 
 2. Acesse o diretório do projeto:
-```bash
-cd aaPanel
-```
+    ```bash
+    cd aaPanel
+    ```
 
-3. Inicie o container Docker em modo detached:
-```bash
-docker-compose up -d
-```
+3. Torne o script de instalação executável:
+    ```bash
+    chmod +x install_aapanel.sh
+    ```
+
+4. Inicie o container Docker em modo detached:
+    ```bash
+    docker-compose up -d
+    ```
+
+5. Acesse o shell do Docker:
+    ```bash
+    docker exec -it aapanel /bin/bash
+    ```
+
+6. Execute o instalador:
+    ```bash
+    ./install_aapanel.sh
+    ```
 
 ## Acessando o Painel
 
-* **Link do painel:** http://localhost:7800/aapanel
-* **Usuário:** aapanel
-* **Senha:** aapanel123
+Para obter as informações de acesso do painel, dentro do shell digite:
+```bash
+bt 14
+```
 
-## Acessando o PhpMyAdmin
-
-* **Link do PhpMyAdmin:** http://localhost:888
-
-Observações:
-
+Observações
 * Certifique-se de que o Docker e o Docker Compose estejam instalados e funcionando corretamente no seu sistema.
+Após clonar o repositório, não se esqueça de tornar o script install_aapanel.sh executável com o comando chmod +x install_aapanel.sh.

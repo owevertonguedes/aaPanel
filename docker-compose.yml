@@ -2,9 +2,7 @@ version: '3.3'
 
 services:
     aapanel:
-        build:
-            context: .
-            dockerfile: Dockerfile
+        image: ubuntu:22.04
         container_name: aapanel
         ports:
             - "7800:7800"
@@ -17,3 +15,4 @@ services:
             - ./website_data:/www/wwwroot
             - ./mysql_data:/www/server/data
             - ./vhost:/www/server/panel/vhost
+            - ./install_aapanel.sh:/install_aapanel.sh
